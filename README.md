@@ -15,8 +15,8 @@ Instale as dependências do npm
 Abra o MongoDB, crie uma conexão e copie o URL de conexão.
 No arquivo server.js, na linha 15, substitua o valor do url pela sua string de conexão do MongoDB.
 
-como iniciar o projeto
-Abra o Visual Studio Code, abra o terminal e digite o seguinte comando:
+Como iniciar o projeto:
+abra o Visual Studio Code, abra o terminal e digite o seguinte comando:
 node server.js
 
 Abra o navegador e aceda ao seguinte endereço:
