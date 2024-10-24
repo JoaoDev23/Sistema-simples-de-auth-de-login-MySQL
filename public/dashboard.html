@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Painel do Cliente</h1>
+        <p id="welcomeMessage"></p>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const response = await fetch('/dashboard');
+            const data = await response.json();
+
+            if (response.ok) {
+                document.getElementById('welcomeMessage').textContent = data.message;
+            } else {
+                alert('Você precisa fazer login.');
+                window.location.href = '/login.html';
+            }
+        });
+
+        document.getElementById('logoutButton').addEventListener('click', async () => {
+            await fetch('/logout', { method: 'POST' });
+            alert('Logout bem-sucedido!');
+            window.location.href = '/login.html';
+        });
+    </script>
+</body>
+</html>
