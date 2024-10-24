@@ -3,8 +3,8 @@ Antes de iniciar o projeto, certifique-se de ter os seguintes softwares instalad
 Node.js (https://nodejs.org/)
 MongoDB (https://www.mongodb.com/) (base de dados)
 
-Instalação 
-Clone o repositório para o seu ambiente trabalho abra o cmd e escreva o seguinte comando:
+Instalação: 
+clone o repositório para o seu ambiente trabalho abra o cmd e escreva o seguinte comando:
 git clone https://github.com/JoaoDev23/Sistema-simples-de-auth-de-login-MySQL
 
 Abra o cmd e escreva o seguinte comando para acessar a pasta do projeto:
