@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10172a;
+}
+
+.login-container, .register-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h1, .register-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#loginForm, #registerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm input, #registerForm input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#loginForm input:focus, #registerForm input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#loginForm button, #registerForm button {
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loginForm button:hover, #registerForm button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .login-container, .register-container {
+        padding: 20px;
+    }
+
+    #loginForm input, #loginForm button, #registerForm input, #registerForm button {
+        font-size: 0.9rem;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#welcomeMessage {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#logoutButton {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+#logoutButton:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #welcomeMessage {
+        font-size: 1rem;
+    }
+
+    #logoutButton {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
