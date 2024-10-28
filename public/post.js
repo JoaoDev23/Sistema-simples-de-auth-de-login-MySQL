@@ -17,12 +17,13 @@ if (loginForm) {
         const data = await response.json();
         if (response.ok) {
             alert('Login bem-sucedido!');
-            window.location.href = '/dashboard';
+            window.location.href = '/dashboard'; // Redireciona para o dashboard
         } else {
             alert(data.message);
         }
     });
 }
+
 
 const registerForm = document.getElementById('registerForm');
 if (registerForm) {
