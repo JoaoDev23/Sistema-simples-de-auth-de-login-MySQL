@@ -1,3 +1,4 @@
+
 const loginForm = document.getElementById('loginForm');
 if (loginForm) {
     loginForm.addEventListener('submit', async (e) => {
@@ -17,7 +18,7 @@ if (loginForm) {
         const data = await response.json();
         if (response.ok) {
             alert('Login bem-sucedido!');
-            window.location.href = '/dashboard'; // Redireciona para o dashboard
+            window.location.href = '/dashboard';
         } else {
             alert(data.message);
         }
@@ -33,19 +34,6 @@ if (registerForm) {
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
-        const confirmPassword = document.getElementById('confirmPassword').value;
-        const errorMessageDiv = document.getElementById('errorMessage');
-
-
-        errorMessageDiv.style.display = 'none';
-        errorMessageDiv.textContent = '';
-
- 
-        if (password !== confirmPassword) {
-            errorMessageDiv.textContent = 'As senhas não coincidem. Tente novamente.';
-            errorMessageDiv.style.display = 'block';
-            return;
-        }
 
         const response = await fetch('/register', {
             method: 'POST',
