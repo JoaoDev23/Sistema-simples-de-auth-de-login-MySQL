@@ -17,7 +17,7 @@ Este projeto foi criado como exemplo educativo para demonstrar como implementar 
 
 ---
 
-# 🛠 Tecnologias Utilizadas
+#  Tecnologias Utilizadas
 
 - **MongoDB**
 - **HTML**
