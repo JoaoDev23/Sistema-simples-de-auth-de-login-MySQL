@@ -63,7 +63,7 @@ npm install
 
 ---
 
-# ⚙️ Configuração da Base de Dados
+#  Configuração da Base de Dados
 
 1. Abra o **MongoDB Compass** ou outro cliente MongoDB.
 2. Crie uma nova conexão.
