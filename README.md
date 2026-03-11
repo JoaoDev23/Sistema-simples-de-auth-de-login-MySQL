@@ -93,6 +93,3 @@ Este projeto foi criado para demonstrar conceitos básicos de:
 
 ---
 
-# ⭐ Apoie o Projeto
-
-Se este projeto foi útil para si, considere dar uma **⭐ no repositório**.
