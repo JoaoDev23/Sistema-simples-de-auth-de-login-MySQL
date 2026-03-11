@@ -31,6 +31,9 @@ Este projeto foi criado como exemplo educativo para demonstrar como implementar 
 
 Antes de executar o projeto, certifique-se de que tem instalado:
 
+- Node.js  
+https://nodejs.org/
+
 - MongoDB  
 https://www.mongodb.com/
 
