@@ -20,6 +20,7 @@ Este projeto foi criado como exemplo educativo para demonstrar como implementar 
 #  Tecnologias Utilizadas
 
 - **MongoDB**
+- **NodeJs**
 - **HTML**
 - **CSS**
 - **JavaScript**
